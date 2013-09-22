@@ -3,6 +3,21 @@
     <h2>Create an Account</h2>
 
     <%= form_for @account do |f| %>
+      <%= f.fields_for :owner do |o| %>
+        <%= form_group_for o, :name do %>
+          <%= o.text_field :name, class: 'form-control' %>
+        <% end %>
+        <%= form_group_for o, :email do %>
+          <%= o.text_field :email, class: 'form-control' %>
+        <% end %>
+        <%= form_group_for o, :password do %>
+          <%= o.text_field :password, class: 'form-control' %>
+        <% end %>
+        <%= form_group_for o, :password_confirmation do %>
+          <%= o.text_field :password_confirmation, class: 'form-control' %>
+        <% end %>
+      <% end %>
+
       <%= form_group_for f, :subdomain do %>
         <div class="input-group">
           <%= f.text_field :subdomain, class: 'form-control' %>
