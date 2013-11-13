@@ -3,7 +3,7 @@ development:
   encoding: unicode
   database: timetracker_development_3
   pool: 5
-  username: postgres
+  username: ryan
   password:
   host: localhost
 
@@ -12,7 +12,7 @@ test:
   encoding: unicode
   database: timetracker_test_3
   pool: 5
-  username: postgres
+  username: ryan
   password:
   host: localhost
 

@@ -13,13 +13,16 @@
     <div class="navbar-header">
       <%= link_to 'Time Tracker', root_path, class: 'navbar-brand' %>
     </div>
+    <div class="pull-right right-buttons">
+      <% if user_signed_in? %>
+        <%= link_to 'Sign out', destroy_user_session_path, method: 'delete', class: 'btn btn-default navbar-btn' %>
+      <% end %>
+    </div>
   </nav>
 </header>
 
 <div class="container">
-  <% flash.each do |name, msg| %>
-    <%= content_tag :div, msg, :id => "flash_#{name}" %>
-  <% end %>
+  <%= flash_messages if show_layout_flash? %>
 
   <div class="row">
     <%= yield %>

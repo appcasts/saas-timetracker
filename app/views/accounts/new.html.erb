@@ -11,10 +11,10 @@
           <%= o.text_field :email, class: 'form-control' %>
         <% end %>
         <%= form_group_for o, :password do %>
-          <%= o.text_field :password, class: 'form-control' %>
+          <%= o.password_field :password, class: 'form-control' %>
         <% end %>
         <%= form_group_for o, :password_confirmation do %>
-          <%= o.text_field :password_confirmation, class: 'form-control' %>
+          <%= o.password_field :password_confirmation, class: 'form-control' %>
         <% end %>
       <% end %>
 
