@@ -3,8 +3,6 @@ development:
   encoding: unicode
   database: timetracker_development_3
   pool: 5
-  username: ryan
-  password:
   host: localhost
 
 test:
@@ -12,8 +10,6 @@ test:
   encoding: unicode
   database: timetracker_test_3
   pool: 5
-  username: ryan
-  password:
   host: localhost
 
 production:
@@ -21,5 +17,3 @@ production:
   encoding: unicode
   database: timetracker_production
   pool: 5
-  username: timetracker
-  password:

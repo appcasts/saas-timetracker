@@ -13,6 +13,7 @@ gem 'apartment', '~> 0.22.1'
 gem 'anjlab-bootstrap-rails', '~> 3.0.0', :require => 'bootstrap-rails'
 
 group :development, :test do
+  gem 'rails-erd'
   gem 'guard'
   gem 'guard-livereload'
   gem 'guard-rspec'
