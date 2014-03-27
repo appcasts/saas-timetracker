@@ -10,7 +10,7 @@ gem 'jquery-rails'
 gem 'devise', '~> 3.1.0'
 gem 'apartment', '~> 0.22.1'
 
-gem 'anjlab-bootstrap-rails', '~> 3.0.0', :require => 'bootstrap-rails'
+gem 'bootstrap-sass', '~> 3.1.1'
 
 group :development, :test do
   gem 'rails-erd'
