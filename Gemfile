@@ -25,4 +25,5 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'shoulda-matchers'
   gem 'letter_opener'
+  gem 'email_spec'
 end
