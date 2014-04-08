@@ -2,29 +2,21 @@
   <div class="panel-body">
     <h2>Create an Account</h2>
 
-    <%= form_for @account do |f| %>
+    <%= simple_form_for @account do |f| %>
       <%= f.fields_for :owner do |o| %>
-        <%= form_group_for o, :name do %>
-          <%= o.text_field :name, class: 'form-control' %>
-        <% end %>
-        <%= form_group_for o, :email do %>
-          <%= o.text_field :email, class: 'form-control' %>
-        <% end %>
-        <%= form_group_for o, :password do %>
-          <%= o.password_field :password, class: 'form-control' %>
-        <% end %>
-        <%= form_group_for o, :password_confirmation do %>
-          <%= o.password_field :password_confirmation, class: 'form-control' %>
-        <% end %>
+        <%= o.input :name %>
+        <%= o.input :email %>
+        <%= o.input :password %>
+        <%= o.input :password_confirmation %>
       <% end %>
 
-      <%= form_group_for f, :subdomain do %>
+      <%= f.input :subdomain do %>
         <div class="input-group">
-          <%= f.text_field :subdomain, class: 'form-control' %>
+          <%= f.input_field :subdomain, class: 'form-control' %>
           <span class="input-group-addon">.timetracker.dev</span>
         </div>
       <% end %>
-      <%= f.submit class: 'btn btn-primary' %>
+      <%= f.button :submit, class: 'btn-primary' %>
     <% end %>
   </div>
 </div>

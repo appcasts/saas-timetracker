@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/plataformatec/simple_form.git
+  revision: 9158043eabe5bb70fb055e9d9baef8ede0ba9115
+  branch: master
+  specs:
+    simple_form (3.0.1)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -214,4 +223,5 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 4.0.0)
   shoulda-matchers
+  simple_form (~> 3.0.0)!
   uglifier (>= 1.3.0)
