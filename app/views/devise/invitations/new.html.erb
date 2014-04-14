@@ -1,0 +1,12 @@
+<div class="col-md-6 col-md-offset-3 panel panel-default">
+  <div class="panel-body">
+    <h2>Send Invitation</h2>
+
+    <%= simple_form_for resource, :as => resource_name,
+                                  :url => invitation_path(resource_name),
+                                  :html => {:method => :post} do |f| %>
+      <%= f.input :email %>
+      <%= f.button :submit, "Create Account", class: 'btn-primary' %>
+    <% end %>
+  </div>
+</div>
