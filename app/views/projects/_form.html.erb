@@ -1,0 +1,12 @@
+<%= simple_form_for(@project,
+                    wrapper_mappings: { boolean: :vertical_boolean }) do |f| %>
+
+  <%= f.input :name %>
+  <%= f.input :client %>
+
+  <% if @project.persisted? %>
+    <%= f.input :archived, as: :boolean %>
+  <% end %>
+  
+  <%= f.button :submit, class: 'btn-primary' %>
+<% end %>

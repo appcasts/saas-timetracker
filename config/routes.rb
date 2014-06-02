@@ -15,6 +15,7 @@ Timetracker::Application.routes.draw do
     root 'projects#index', as: :subdomain_root
     devise_for :users
     resources :users, only: :index
+    resources :projects, except: [:index, :show, :destroy]
   end
   
   constraints(SubdomainBlank) do

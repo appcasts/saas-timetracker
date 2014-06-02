@@ -18,6 +18,7 @@
         <%= link_to 'Sign out', destroy_user_session_path, method: 'delete', class: 'btn btn-default navbar-btn' %>
       </div>
       <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to 'New Project', new_project_path %></li>
         <li><%= link_to 'Users', users_path %></li>
       </ul>
     <% end %>
